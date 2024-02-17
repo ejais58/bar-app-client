@@ -1,0 +1,30 @@
+footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 1px solid transparent;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan en varias líneas si no caben en el ancho disponible */
+}
+
+.social-item {
+    margin: 0 30px; /* Ajusta los márgenes entre los elementos */
+    width: 250px; /* Define un ancho fijo para cada elemento */
+    text-align: center;
+}
+
+.copyright{
+   margin-top: 10px;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.info{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+

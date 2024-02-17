@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Center items horizontally */
+    height: 89%;
+}
+
+.logo{
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.card-container {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.matcad {
+    display: flex;
+    width: 200px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 3px 3px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.title{
+    font-size: 25px;
+}
+.matcad:hover{
+    transform: scale(1);
+    box-shadow: 0 4px 4px 4px rgb(0, 0, 0, 0.3);
+}
