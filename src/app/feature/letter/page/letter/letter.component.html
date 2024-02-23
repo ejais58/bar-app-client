@@ -1,1 +1,30 @@
-<p>letter works!</p>
+
+<div class="container">
+
+    <!-- categorias -->
+    <div class="container-category">
+        <div  *ngFor="let category of categories" class="card-category">
+            <a [href]="'carta#' + category.ctg_name"><mat-card-title class="category-title">{{category.ctg_name}}</mat-card-title></a>
+        </div>
+    </div>
+    
+    <!-- productos -->
+    <div [id]="categoryGroup.category" *ngFor="let categoryGroup of productsByCategory"  class="container-product">
+        <h2>{{ categoryGroup.category }}</h2>
+        <div *ngFor="let product of categoryGroup.products" class="card-product">
+          <div class="prod-info">
+            <div class="name-price">
+                <p class="p-name">{{ product.prod_name }}</p>
+                <p class="p-price">${{ product.prod_price }}</p>
+            </div>
+            <div class="description">
+                <p class="p-description" *ngIf="product.prod_description">({{ product.prod_description }})</p>
+            </div>
+        </div>
+        </div>
+      </div>
+</div>
+
+  
+
+<app-footer></app-footer>

@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { LetterRoutingModule } from './letter-routing.module';
 import { LetterComponent } from './page/letter/letter.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -11,7 +13,9 @@ import { LetterComponent } from './page/letter/letter.component';
   ],
   imports: [
     CommonModule,
-    LetterRoutingModule
+    LetterRoutingModule,
+    MatCardModule,
+    SharedModule
   ]
 })
 export class LetterModule { }
