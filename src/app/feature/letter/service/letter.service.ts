@@ -12,11 +12,11 @@ export class LetterService {
   baseUrl: string = environment.apiUrl
   
   getProduct(){
-    return this.httpClient.get(`${this.baseUrl}/product/all/1`);
+    return this.httpClient.get(`${this.baseUrl}/product/all/65daa0e091f55b4d529734c5`);
   }
 
   getCategory(){
-    return this.httpClient.get(`${this.baseUrl}/product/all-categories/1`);
+    return this.httpClient.get(`${this.baseUrl}/product/all-categories/65daa0e091f55b4d529734c5`);
   }
   
   getProductByCategory(category: string){
